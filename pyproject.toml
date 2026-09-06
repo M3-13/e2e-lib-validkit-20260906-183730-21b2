@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "validkit"
+version = "0.1.0"
+description = "Kleine, eigenständige Bibliothek mit reinen Prüf- und Normalisierungsfunktionen (E-Mail, Luhn, IBAN, ISBN-13, Telefon, Akzente, Maskierung, Slugify, Clamp)."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["validkit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
